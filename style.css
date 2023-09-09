@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.theme{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.title{
+    margin: 15px auto;
+    color:rgb(3, 245, 245);
+    padding: 8px;
+    border-radius: 15px;
+    width: max-content;
+    background: rgb(81, 103, 121);
+}
+.watch-container{
+    margin: 0 auto;
+    position: relative;
+    width: max-content;
+}
+.watch-body{
+    width: 400px;
+    height: 400px;
+}
+.hand{
+    margin: 0 auto;
+    position: absolute;
+    transform-origin: bottom;
+    left: 0;
+    right: 0;
+}
+.hour{
+    width: 3%;
+    top: 21%
+}
+.minute{
+    width: 3%;
+    top: 16%
+}
+.second{
+    width:0.9%;
+    top: 13%;
+}
+.center{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    width: 4%;
+}
+
+@media screen and (max-width: 375px){
+    .watch-body{
+       width: 310px;
+       height: 310px;
+    }
+}
